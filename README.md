@@ -226,9 +226,11 @@ This project is for educational purposes.
 ## Future Improvements
 
 Look at schema improvements
+
 The current schema uses unbounded arrays. This is an antipattern in MongoDB and would not work at scale. There is a requirement for a more optimized approach to the schema.
 
 Indexing for Schema?
+
 The default indexing at the _id field exists. However, currently no extra indexing has been put into place. The indexing we can attempt are: Simple Index, Compound Index.
 A simple index can be added to each of the documents - user and results to increase performance in fetching users and user specific results.
 
